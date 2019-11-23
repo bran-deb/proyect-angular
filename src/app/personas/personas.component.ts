@@ -13,6 +13,7 @@ import { Component } from '@angular/core';
 export class PersonasComponent{
   agregarPersona = false;
   agregarPersonaStatus = "No se ha agregado ninguna persona";
+  tituloPersona = "ing.";
 
   constructor(){
     setTimeout(
@@ -23,5 +24,9 @@ export class PersonasComponent{
   }
       onCrearPersona(){
         this.agregarPersonaStatus = "persona agregada";
+      }
+
+      onModificarPersona(event: Event){
+        this.tituloPersona = (<HTMLInputElement>event.target).value;
       }
 }
