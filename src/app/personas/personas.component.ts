@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   //styleUrls: ['./personas.component.css']
   styles:[`
   h1{
-    color:blue;
+    color:black;
   }
   `]
 })
